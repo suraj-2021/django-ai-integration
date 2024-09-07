@@ -1,0 +1,8 @@
+<form method = "POST">
+    {%csrf_token%}
+    {{form.as_p}}
+    <button type="submit">Send</button>
+</form>
+
+<h1>Response From Google</h1>
+<p>{{response.txt}}</p>
